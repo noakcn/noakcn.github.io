@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NOAK</title>
+  <subtitle>noak site</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://noak.tech/"/>
+  <updated>2017-03-31T01:58:04.277Z</updated>
+  <id>http://noak.tech/</id>
+  
+  <author>
+    <name>noak</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://noak.tech/2017/03/31/Html5%20Canvas/"/>
+    <id>http://noak.tech/2017/03/31/Html5 Canvas/</id>
+    <published>2017-03-31T01:58:04.277Z</published>
+    <updated>2017-03-31T01:58:04.277Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTML-5-Canvas&quot;&gt;&lt;a href=&quot;#HTML-5-Canvas&quot; class=&quot;headerlink&quot; title=&quot;HTML 5 Canvas&quot;&gt;&lt;/a&gt;HTML 5 Canvas&lt;/h1&gt;&lt;figure class=&quot;highlight html
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://noak.tech/2017/03/31/jquery%20%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1/"/>
+    <id>http://noak.tech/2017/03/31/jquery 事件冒泡/</id>
+    <published>2017-03-31T01:58:04.277Z</published>
+    <updated>2017-03-31T01:58:04.277Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;jquery-事件冒泡&quot;&gt;&lt;a href=&quot;#jquery-事件冒泡&quot; class=&quot;headerlink&quot; title=&quot;jquery 事件冒泡&quot;&gt;&lt;/a&gt;jquery 事件冒泡&lt;/h1&gt;&lt;p&gt;tags:#java script&lt;/p&gt;
+&lt;p&gt;首先可以来看一个例
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://noak.tech/2017/03/31/%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F/"/>
+    <id>http://noak.tech/2017/03/31/缓存穿透/</id>
+    <published>2017-03-31T01:58:04.277Z</published>
+    <updated>2017-03-31T01:58:04.277Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;一、缓存穿透&quot;&gt;&lt;a href=&quot;#一、缓存穿透&quot; class=&quot;headerlink&quot; title=&quot;一、缓存穿透&quot;&gt;&lt;/a&gt;一、缓存穿透&lt;/h5&gt;&lt;p&gt;我们在项目中使用缓存的时候，可能出现 业务逻辑服务查询一个缓存key，发现没有就到DB中去查询结果，然后返回
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://noak.tech/2017/03/31/hello-world/"/>
+    <id>http://noak.tech/2017/03/31/hello-world/</id>
+    <published>2017-03-31T01:49:42.565Z</published>
+    <updated>2017-03-31T01:49:42.565Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
