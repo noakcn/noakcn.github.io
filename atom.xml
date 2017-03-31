@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://noak.tech/"/>
-  <updated>2017-03-31T02:33:16.038Z</updated>
+  <updated>2017-03-31T02:38:59.658Z</updated>
   <id>http://noak.tech/</id>
   
   <author>
@@ -16,20 +16,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>HTML 5 Canvas</title>
     <link href="http://noak.tech/2017/03/31/Html5%20Canvas/"/>
     <id>http://noak.tech/2017/03/31/Html5 Canvas/</id>
-    <published>2017-03-31T02:33:16.038Z</published>
-    <updated>2017-03-31T02:33:16.038Z</updated>
+    <published>2017-03-31T02:32:16.000Z</published>
+    <updated>2017-03-31T02:38:59.658Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: HTML 5 Canvas &lt;/p&gt;
-&lt;p&gt;date: 2017-3-31 10:32:16&lt;/p&gt;
-&lt;p&gt;tags: &lt;/p&gt;
-&lt;p&gt;-–&lt;/p&gt;
-&lt;h1 id=&quot;HTML-5-Canvas&quot;&gt;&lt;a href=&quot;#HTML-5-Canvas&quot; class=&quot;headerlink&quot; title=&quot;HTML 5 Canvas&quot;&gt;&lt;/a&gt;HTML 5 Canvas&lt;/h1&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;width&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;height&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;border:1px solid #000000;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h1 id=&quot;HTML-5-Canvas&quot;&gt;&lt;a href=&quot;#HTML-5-Canvas&quot; class=&quot;headerlink&quot; title=&quot;HTML 5 Canvas&quot;&gt;&lt;/a&gt;HTML 5 Canvas&lt;/h1&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;width&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;height&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;border:1px solid #000000;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/noakcn/fzyttzso/4/&quot;&gt;点击运行&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/code&gt;创建一个画布&lt;/p&gt;
@@ -45,6 +40,8 @@
     
     </summary>
     
+    
+      <category term="html5 canvas h5" scheme="http://noak.tech/tags/html5-canvas-h5/"/>
     
   </entry>
   
