@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>NOAK</title>
+  <title>Tag: canvas | NOAK</title>
   <meta name="description" content="A blog of Noak" />
   <meta name="keywords" content="blog,stkevintan,IT" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,16 +12,15 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="NOAK">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hello about">
+  <meta name="description" content="A blog of Noak">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NOAK">
-<meta property="og:url" content="http://noak.tech/about/index.html">
+<meta property="og:url" content="http://noak.tech/tags/canvas/index.html">
 <meta property="og:site_name" content="NOAK">
-<meta property="og:description" content="hello about">
-<meta property="og:updated_time" content="2017-03-31T01:49:42.565Z">
+<meta property="og:description" content="A blog of Noak">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NOAK">
-<meta name="twitter:description" content="hello about">
+<meta name="twitter:description" content="A blog of Noak">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -111,35 +110,71 @@
   <div class="l_body">
     <div class='container'>
       <div class='l_main'>
-        <article id="page-undefined"
-  class="post white-box article-type-page"
-  itemscope itemprop="blogPost">
-	<section class='meta'>
-	<h2 class="title">
-  	<a href="/about/index.html">
-    	
-    </a>
-  </h2>
-	<time>
-	  3月 31, 2017
-	</time>
+        
+	<section class="page-header tag banner waves-image">
+    <h1>Tag : <span>canvas</span></h1>
+  </section>
+
+<section class="post-list">
 	
-	</section>
-	
-		<section class="tog"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hello-about"><span class="toc-number">1.</span> <span class="toc-text">hello about</span></a></li></ol></section>
-	
-	<section class="article typo">
-  	<div class="article-entry" itemprop="articleBody">
-    	<h2 id="hello-about"><a href="#hello-about" class="headerlink" title="hello about"></a>hello about</h2>
-  	</div>
-	  
-	</section>
-	
-		<section id="comments">
-			<div id="disqus_thread"></div>
-		</section>
-	
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/03/31/Html5 Canvas/">
+        HTML 5 Canvas
+      </a>
+    </h2>
+    
+    <time>
+      3月 31, 2017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/笔记/">笔记</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="HTML-5-Canvas"><a href="#HTML-5-Canvas" class="headerlink" title="HTML 5 Canvas"></a>HTML 5 Canvas</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">style</span>=<span class="string">"border:1px solid #000000;"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a href="https://jsfiddle.net/noakcn/fzyttzso/4/">点击运行</a></p>
+<blockquote>
+<p><code>&lt;canvas&gt;&lt;/canvas&gt;</code>创建一个画布</p>
+</blockquote>
+<p><strong><canvas></strong>本身没有绘图功能，需要搭配JavaScript来绘图</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);<span class="comment">//首先，找到&lt;canvas&gt;元素</span></div><div class="line"><span class="keyword">var</span> ctx = c.getContext(<span class="string">"2d"</span>);<span class="comment">//创建context对象</span></div><div class="line">ctx.fillStyle = <span class="string">"#FF0000"</span>;<span class="comment">//颜色</span></div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">150</span>, <span class="number">75</span>); <span class="comment">//大小 fillRect(x,y,width,height)</span></div></pre></td></tr></table></figure>
+<p><a href="https://jsfiddle.net/noakcn/fzyttzso/2/">点击运行</a></p>
+<p><strong>Canvas坐标</strong></p>
+<p><img src="http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png" alt=""></p>
+<blockquote>
+<p>canvas 的左上角坐标为 (0,0) </p>
+</blockquote>
+
+    
+	  <div class="readmore">
+      <a href="/2017/03/31/Html5 Canvas/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/html5/">html5</a>
+      
+        <a href="/tags/canvas/">canvas</a>
+      
+        <a href="/tags/h5/">h5</a>
+      
+	  </div>
+    
+  </section>
 </article>
+    </div>
+  
+</section>
+
 
       </div>
       <aside class='l_side'>
@@ -230,13 +265,11 @@
 <script>
   var disqus_shortname = 'noakcn';
   
-  var disqus_url = 'http://noak.tech/about/index.html';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

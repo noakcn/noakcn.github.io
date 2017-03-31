@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://noak.tech/"/>
-  <updated>2017-03-31T02:38:59.658Z</updated>
+  <updated>2017-03-31T02:44:04.290Z</updated>
   <id>http://noak.tech/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>HTML 5 Canvas</title>
     <link href="http://noak.tech/2017/03/31/Html5%20Canvas/"/>
     <id>http://noak.tech/2017/03/31/Html5 Canvas/</id>
-    <published>2017-03-31T02:32:16.000Z</published>
-    <updated>2017-03-31T02:38:59.658Z</updated>
+    <published>2017-03-31T10:32:16.000Z</published>
+    <updated>2017-03-31T02:44:04.290Z</updated>
     
     <summary type="html">
     
@@ -40,8 +40,14 @@
     
     </summary>
     
+      <category term="笔记" scheme="http://noak.tech/categories/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="html5 canvas h5" scheme="http://noak.tech/tags/html5-canvas-h5/"/>
+    
+      <category term="html5" scheme="http://noak.tech/tags/html5/"/>
+    
+      <category term="canvas" scheme="http://noak.tech/tags/canvas/"/>
+    
+      <category term="h5" scheme="http://noak.tech/tags/h5/"/>
     
   </entry>
   
