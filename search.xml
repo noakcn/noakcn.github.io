@@ -17,8 +17,9 @@
 <p><strong>Canvas坐标</strong></p>
 <p><img src="http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png" alt=""></p>
 <blockquote>
-<p>canvas 的左上角坐标为 (0,0)</p>
+<p>canvas 的左上角坐标为 (0,0) </p>
 </blockquote>
+<a id="more"></a>
 <p><strong>Canvas - 路径</strong></p>
 <p>绘制一条斜线</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</div><div class="line"><span class="keyword">var</span> ctx = c.getContext(<span class="string">"2d"</span>);</div><div class="line">ctx.moveTo(<span class="number">0</span>,<span class="number">0</span>); <span class="comment">//moveTo(x,y) 定义线条开始坐标</span></div><div class="line">ctx.lineTo(<span class="number">200</span>,<span class="number">100</span>);<span class="comment">//lineTo(x,y) 定义线条结束坐标</span></div><div class="line">ctx.stroke();<span class="comment">//实际地绘制出通过 moveTo() 和 lineTo() 方法定义的路径。</span></div></pre></td></tr></table></figure>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://noak.tech/"/>
-  <updated>2017-03-31T01:58:04.277Z</updated>
+  <updated>2017-03-31T02:29:21.762Z</updated>
   <id>http://noak.tech/</id>
   
   <author>
@@ -19,12 +19,24 @@
     <title></title>
     <link href="http://noak.tech/2017/03/31/Html5%20Canvas/"/>
     <id>http://noak.tech/2017/03/31/Html5 Canvas/</id>
-    <published>2017-03-31T01:58:04.277Z</published>
-    <updated>2017-03-31T01:58:04.277Z</updated>
+    <published>2017-03-31T02:29:21.762Z</published>
+    <updated>2017-03-31T02:29:21.762Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;HTML-5-Canvas&quot;&gt;&lt;a href=&quot;#HTML-5-Canvas&quot; class=&quot;headerlink&quot; title=&quot;HTML 5 Canvas&quot;&gt;&lt;/a&gt;HTML 5 Canvas&lt;/h1&gt;&lt;figure class=&quot;highlight html
+      &lt;h1 id=&quot;HTML-5-Canvas&quot;&gt;&lt;a href=&quot;#HTML-5-Canvas&quot; class=&quot;headerlink&quot; title=&quot;HTML 5 Canvas&quot;&gt;&lt;/a&gt;HTML 5 Canvas&lt;/h1&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;width&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;height&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;border:1px solid #000000;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/noakcn/fzyttzso/4/&quot;&gt;点击运行&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/code&gt;创建一个画布&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;canvas&gt;&lt;/strong&gt;本身没有绘图功能，需要搭配JavaScript来绘图&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; c = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//首先，找到&amp;lt;canvas&amp;gt;元素&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ctx = c.getContext(&lt;span class=&quot;string&quot;&gt;&quot;2d&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//创建context对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ctx.fillStyle = &lt;span class=&quot;string&quot;&gt;&quot;#FF0000&quot;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//颜色&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ctx.fillRect(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;150&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;75&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//大小 fillRect(x,y,width,height)&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/noakcn/fzyttzso/2/&quot;&gt;点击运行&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Canvas坐标&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;canvas 的左上角坐标为 (0,0) &lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
