@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://noak.tech/"/>
-  <updated>2017-03-31T02:47:35.594Z</updated>
+  <updated>2017-03-31T02:57:47.704Z</updated>
   <id>http://noak.tech/</id>
   
   <author>
@@ -16,15 +16,64 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>缓存问题</title>
+    <link href="http://noak.tech/2017/03/31/%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F/"/>
+    <id>http://noak.tech/2017/03/31/缓存穿透/</id>
+    <published>2017-03-31T02:51:57.000Z</published>
+    <updated>2017-03-31T02:57:47.704Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;一、缓存穿透&quot;&gt;&lt;a href=&quot;#一、缓存穿透&quot; class=&quot;headerlink&quot; title=&quot;一、缓存穿透&quot;&gt;&lt;/a&gt;一、缓存穿透&lt;/h5&gt;&lt;p&gt;我们在项目中使用缓存的时候，可能出现 业务逻辑服务查询一个缓存key，发现没有就到DB中去查询结果，然后返回的时候没有把对应的结果设置进缓存。当有大量业务要查询这个key的时候，就会导致大量的查询穿透缓存到达DB进行查询，从而导致DB压力大增。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://noak.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="redis" scheme="http://noak.tech/tags/redis/"/>
+    
+      <category term="缓存" scheme="http://noak.tech/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jquery 事件冒泡</title>
+    <link href="http://noak.tech/2017/03/31/jquery%20%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1/"/>
+    <id>http://noak.tech/2017/03/31/jquery 事件冒泡/</id>
+    <published>2017-03-31T02:49:58.000Z</published>
+    <updated>2017-03-31T02:57:47.703Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先可以来看一个例子：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;dOne&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onclick&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;alert(&#39;我是最外层&#39;)&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;dTwo&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onclick&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;alert(&#39;我是中间层&#39;)&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;     &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;http://www.baidu.com&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;aTree&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onclick&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;alert(&#39;我是最里层&#39;)&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;click me&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/noakcn/4hjh4957/7/&quot;&gt;点击运行&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上面这个示例分3层：&lt;code&gt;dOne&lt;/code&gt; 最外面一层，&lt;code&gt;dTwo&lt;/code&gt;中间层，&lt;code&gt;a&lt;/code&gt;标签在最里层，他们各自有自己的&lt;code&gt;onclick&lt;/code&gt;事件。&lt;/p&gt;
+&lt;p&gt;运行后会发现一次弹出&lt;code&gt;我是最里层--&amp;gt;我是中间层--&amp;gt;我是最外层&lt;/code&gt;然后跳转到百度。&lt;/p&gt;
+&lt;p&gt;那么为什么会这样呢？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://noak.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="javascript" scheme="http://noak.tech/tags/javascript/"/>
+    
+      <category term="html" scheme="http://noak.tech/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML 5 Canvas</title>
     <link href="http://noak.tech/2017/03/31/Html5%20Canvas/"/>
     <id>http://noak.tech/2017/03/31/Html5 Canvas/</id>
     <published>2017-03-31T02:32:16.000Z</published>
-    <updated>2017-03-31T02:47:35.594Z</updated>
+    <updated>2017-03-31T02:57:47.703Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;HTML-5-Canvas&quot;&gt;&lt;a href=&quot;#HTML-5-Canvas&quot; class=&quot;headerlink&quot; title=&quot;HTML 5 Canvas&quot;&gt;&lt;/a&gt;HTML 5 Canvas&lt;/h1&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;width&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;height&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;border:1px solid #000000;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;width&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;height&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;border:1px solid #000000;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;canvas&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/noakcn/fzyttzso/4/&quot;&gt;点击运行&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/code&gt;创建一个画布&lt;/p&gt;
@@ -32,11 +81,6 @@
 &lt;p&gt;&lt;strong&gt;&lt;canvas&gt;&lt;/strong&gt;本身没有绘图功能，需要搭配JavaScript来绘图&lt;/p&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; c = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//首先，找到&amp;lt;canvas&amp;gt;元素&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ctx = c.getContext(&lt;span class=&quot;string&quot;&gt;&quot;2d&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//创建context对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ctx.fillStyle = &lt;span class=&quot;string&quot;&gt;&quot;#FF0000&quot;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//颜色&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ctx.fillRect(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;150&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;75&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//大小 fillRect(x,y,width,height)&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/noakcn/fzyttzso/2/&quot;&gt;点击运行&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Canvas坐标&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;canvas 的左上角坐标为 (0,0) &lt;/p&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
@@ -48,39 +92,6 @@
       <category term="canvas" scheme="http://noak.tech/tags/canvas/"/>
     
       <category term="h5" scheme="http://noak.tech/tags/h5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://noak.tech/2017/03/31/jquery%20%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1/"/>
-    <id>http://noak.tech/2017/03/31/jquery 事件冒泡/</id>
-    <published>2017-03-31T01:58:04.277Z</published>
-    <updated>2017-03-31T01:58:04.277Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;jquery-事件冒泡&quot;&gt;&lt;a href=&quot;#jquery-事件冒泡&quot; class=&quot;headerlink&quot; title=&quot;jquery 事件冒泡&quot;&gt;&lt;/a&gt;jquery 事件冒泡&lt;/h1&gt;&lt;p&gt;tags:#java script&lt;/p&gt;
-&lt;p&gt;首先可以来看一个例
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://noak.tech/2017/03/31/%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F/"/>
-    <id>http://noak.tech/2017/03/31/缓存穿透/</id>
-    <published>2017-03-31T01:58:04.277Z</published>
-    <updated>2017-03-31T01:58:04.277Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h5 id=&quot;一、缓存穿透&quot;&gt;&lt;a href=&quot;#一、缓存穿透&quot; class=&quot;headerlink&quot; title=&quot;一、缓存穿透&quot;&gt;&lt;/a&gt;一、缓存穿透&lt;/h5&gt;&lt;p&gt;我们在项目中使用缓存的时候，可能出现 业务逻辑服务查询一个缓存key，发现没有就到DB中去查询结果，然后返回
-    
-    </summary>
-    
     
   </entry>
   

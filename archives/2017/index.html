@@ -123,6 +123,95 @@
   <section class="meta">
     
     <h2 class="title">
+      <a href="/2017/03/31/缓存穿透/">
+        缓存问题
+      </a>
+    </h2>
+    
+    <time>
+      3月 31, 2017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/笔记/">笔记</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h5 id="一、缓存穿透"><a href="#一、缓存穿透" class="headerlink" title="一、缓存穿透"></a>一、缓存穿透</h5><p>我们在项目中使用缓存的时候，可能出现 业务逻辑服务查询一个缓存key，发现没有就到DB中去查询结果，然后返回的时候没有把对应的结果设置进缓存。当有大量业务要查询这个key的时候，就会导致大量的查询穿透缓存到达DB进行查询，从而导致DB压力大增。</p>
+
+    
+	  <div class="readmore">
+      <a href="/2017/03/31/缓存穿透/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/redis/">redis</a>
+      
+        <a href="/tags/缓存/">缓存</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/03/31/jquery 事件冒泡/">
+        jquery 事件冒泡
+      </a>
+    </h2>
+    
+    <time>
+      3月 31, 2017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/笔记/">笔记</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>首先可以来看一个例子：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"dOne"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是最外层')"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"dTwo"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是中间层')"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.baidu.com"</span> <span class="attr">id</span>=<span class="string">"aTree"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是最里层')"</span>&gt;</span>click me<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a href="https://jsfiddle.net/noakcn/4hjh4957/7/">点击运行</a></p>
+<p>上面这个示例分3层：<code>dOne</code> 最外面一层，<code>dTwo</code>中间层，<code>a</code>标签在最里层，他们各自有自己的<code>onclick</code>事件。</p>
+<p>运行后会发现一次弹出<code>我是最里层--&gt;我是中间层--&gt;我是最外层</code>然后跳转到百度。</p>
+<p>那么为什么会这样呢？</p>
+
+    
+	  <div class="readmore">
+      <a href="/2017/03/31/jquery 事件冒泡/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/javascript/">javascript</a>
+      
+        <a href="/tags/html/">html</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
       <a href="/2017/03/31/Html5 Canvas/">
         HTML 5 Canvas
       </a>
@@ -139,7 +228,7 @@
 
   </section>
   <section class="article typo">
-	  <h1 id="HTML-5-Canvas"><a href="#HTML-5-Canvas" class="headerlink" title="HTML 5 Canvas"></a>HTML 5 Canvas</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">style</span>=<span class="string">"border:1px solid #000000;"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
+	  <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">style</span>=<span class="string">"border:1px solid #000000;"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><a href="https://jsfiddle.net/noakcn/fzyttzso/4/">点击运行</a></p>
 <blockquote>
 <p><code>&lt;canvas&gt;&lt;/canvas&gt;</code>创建一个画布</p>
@@ -147,11 +236,6 @@
 <p><strong><canvas></strong>本身没有绘图功能，需要搭配JavaScript来绘图</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);<span class="comment">//首先，找到&lt;canvas&gt;元素</span></div><div class="line"><span class="keyword">var</span> ctx = c.getContext(<span class="string">"2d"</span>);<span class="comment">//创建context对象</span></div><div class="line">ctx.fillStyle = <span class="string">"#FF0000"</span>;<span class="comment">//颜色</span></div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">150</span>, <span class="number">75</span>); <span class="comment">//大小 fillRect(x,y,width,height)</span></div></pre></td></tr></table></figure>
 <p><a href="https://jsfiddle.net/noakcn/fzyttzso/2/">点击运行</a></p>
-<p><strong>Canvas坐标</strong></p>
-<p><img src="http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png" alt=""></p>
-<blockquote>
-<p>canvas 的左上角坐标为 (0,0) </p>
-</blockquote>
 
     
 	  <div class="readmore">
@@ -169,93 +253,6 @@
         <a href="/tags/h5/">h5</a>
       
 	  </div>
-    
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post revealno-title">
-  <section class="meta">
-    
-    <time>
-      3月 31, 2017
-    </time>
-		
-  </section>
-  <section class="article typo">
-	  <h1 id="jquery-事件冒泡"><a href="#jquery-事件冒泡" class="headerlink" title="jquery 事件冒泡"></a>jquery 事件冒泡</h1><p>tags:#java script</p>
-<p>首先可以来看一个例子：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"dOne"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是最外层')"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"dTwo"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是中间层')"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.baidu.com"</span> <span class="attr">id</span>=<span class="string">"aTree"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是最里层')"</span>&gt;</span>click me<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/4hjh4957/7/" target="_blank" rel="external">点击运行</a></p>
-<p>上面这个示例分3层：<code>dOne</code> 最外面一层，<code>dTwo</code>中间层，<code>a</code>标签在最里层，他们各自有自己的<code>onclick</code>事件。</p>
-<p>运行后会发现一次弹出<code>我是最里层--&gt;我是中间层--&gt;我是最外层</code>然后跳转到百度。</p>
-<p>那么为什么会这样呢？</p>
-<p>这个就要讲讲jquery的事件冒泡了。</p>
-<blockquote>
-<p>在一个对象上触发某类事件（比如单击事件），如果此对象定义了处理此事件的处理程序，那么此事件就会调用这个处理程序，如果没有定义出此事件的处理程序或者事件返回true，那么这个事件就会向这个对象的父级对象传播，从里到外，直至他被处理，或者到达对象层次的最顶层，即document对象（有些是window)</p>
-</blockquote>
-<p><strong>然而有时候这并不是我们所需要的,那该如何处理呢？</strong></p>
-<p>我们可以阻止事件的冒泡行为。</p>
-<ol>
-<li>event.stopPropagation(); </li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="string">"#aTree"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    e.stopPropagation();</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/4hjh4957/4/" target="_blank" rel="external">点击运行</a></p>
-<p>这时候就会发现只有 <code>我是最里层</code>被执行，然后跳转至百度，达到了阻止事件往外冒泡。</p>
-<ol>
-<li>return false</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="string">"#aTree"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/4hjh4957/5/" target="_blank" rel="external">点击运行</a></p>
-<p>也是只有 <code>我是最里层</code>被执行，虽然阻止了事件往外冒泡，但是却不跳转百度。</p>
-<ol>
-<li>event.preventDefault();</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="string">"#aTree"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    e.preventDefault();</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/4hjh4957/6/" target="_blank" rel="external">点击运行</a></p>
-<p>运行后依次出现<code>我是最里层--&gt;我是中间层--&gt;我是最外层</code> 但是不跳转百度</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ol>
-<li>event.stopPropagation();</li>
-</ol>
-<p>事件处理过程中，阻止了事件的冒泡，不会阻止默认行为。</p>
-<ol>
-<li>return false;</li>
-</ol>
-<p>事件处理过程中，阻止了事件的冒泡，但是也阻止了默认行为。</p>
-<ol>
-<li>event.preventDefault();</li>
-</ol>
-<p>事件处理过程中，不阻止冒泡，但是阻止默认行为。</p>
-
-
-    
-    
-    
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post revealno-title">
-  <section class="meta">
-    
-    <time>
-      3月 31, 2017
-    </time>
-		
-  </section>
-  <section class="article typo">
-	  <h5 id="一、缓存穿透"><a href="#一、缓存穿透" class="headerlink" title="一、缓存穿透"></a>一、缓存穿透</h5><p>我们在项目中使用缓存的时候，可能出现 业务逻辑服务查询一个缓存key，发现没有就到DB中去查询结果，然后返回的时候没有把对应的结果设置进缓存。当有大量业务要查询这个key的时候，就会导致大量的查询穿透缓存到达DB进行查询，从而导致DB压力大增。</p>
-<p>缓存穿透是指查询一个一定不存在的数据，由于缓存是不命中时被动写的，并且出于容错考虑，如果从存储层查不到数据则不写入缓存，这将导致这个存在的数据每次请求都要到存储层去查询，失去了缓存的意义。</p>
-<p>有 很多种方法可以有效地解决缓存穿透问题，最常见的则是采用布隆过滤器，将所有可能存在的数据哈希到一个足够大的bitmap中，一个一定不存在的数据会被 这个bitmap拦截掉，从而避免了对底层存储系统的查询压力。在数据魔方里，我们采用了一个更为简单粗暴的方法，如果一个查询返回的数据为空（不管是数 据不存在，还是系统故障），我们仍然把这个空结果进行缓存，但它的过期时间会很短，最长不超过五分钟。</p>
-<h5 id="二、并发缓存"><a href="#二、并发缓存" class="headerlink" title="二、并发缓存"></a>二、并发缓存</h5><p>有时候如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题。</p>
-<p>　　我现在的想法是对缓存查询加锁，如果KEY不存在，就加锁，然后查DB入缓存，然后解锁；其他进程如果发现有锁就等待，然后等解锁后返回数据或者进入DB查询。这种情况和刚才说的预先设定值问题有些类似，只不过利用锁的方式，会造成部分请求等待。</p>
-<h5 id="三、缓存失效，缓存雪崩"><a href="#三、缓存失效，缓存雪崩" class="headerlink" title="三、缓存失效，缓存雪崩"></a>三、缓存失效，缓存雪崩</h5><p>缓 存失效时的雪崩效应对底层系统的冲击非常可怕。遗憾的是，这个问题目前并没有很完美的解决方案。大多数系统设计者考虑用加锁或者队列的方式保证缓存的单线 程（进程）写，从而避免失效时大量的并发请求落到底层存储系统上。在数据魔方中，我们设计的缓存过期机制理论上能够将各个客户端的数据失效时间均 匀地分布在时间轴上，一定程度上能够避免缓存同时失效带来的雪崩效应。</p>
-
-
-    
-    
     
   </section>
 </article>
@@ -339,7 +336,7 @@
     
     <ul class="entry">
     
-        <li><a class="flat-box" href="/categories/笔记/"><div class='name'>笔记</div><div class='badget'>1</div></a></li>
+        <li><a class="flat-box" href="/categories/笔记/"><div class='name'>笔记</div><div class='badget'>3</div></a></li>
     
     </ul>
     
@@ -350,7 +347,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="/tags/canvas/" style="font-size: 14px; color: #808080">canvas</a> <a href="/tags/h5/" style="font-size: 14px; color: #808080">h5</a> <a href="/tags/html5/" style="font-size: 14px; color: #808080">html5</a>
+        <a href="/tags/canvas/" style="font-size: 14px; color: #808080">canvas</a> <a href="/tags/h5/" style="font-size: 14px; color: #808080">h5</a> <a href="/tags/html/" style="font-size: 14px; color: #808080">html</a> <a href="/tags/html5/" style="font-size: 14px; color: #808080">html5</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/redis/" style="font-size: 14px; color: #808080">redis</a> <a href="/tags/缓存/" style="font-size: 14px; color: #808080">缓存</a>
     </div>
 </div>
 

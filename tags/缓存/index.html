@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Category: 笔记 | NOAK</title>
+  <title>Tag: 缓存 | NOAK</title>
   <meta name="description" content="A blog of Noak" />
   <meta name="keywords" content="blog,stkevintan,IT" />
   <meta name="HandheldFriendly" content="True" />
@@ -15,7 +15,7 @@
   <meta name="description" content="A blog of Noak">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NOAK">
-<meta property="og:url" content="http://noak.tech/categories/笔记/index.html">
+<meta property="og:url" content="http://noak.tech/tags/缓存/index.html">
 <meta property="og:site_name" content="NOAK">
 <meta property="og:description" content="A blog of Noak">
 <meta name="twitter:card" content="summary">
@@ -111,8 +111,8 @@
     <div class='container'>
       <div class='l_main'>
         
-	<section class="page-header category banner waves-image">
-    <h1>Category : <span>笔记</span></h1>
+	<section class="page-header tag banner waves-image">
+    <h1>Tag : <span>缓存</span></h1>
   </section>
 
 <section class="post-list">
@@ -152,104 +152,6 @@
         <a href="/tags/redis/">redis</a>
       
         <a href="/tags/缓存/">缓存</a>
-      
-	  </div>
-    
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2017/03/31/jquery 事件冒泡/">
-        jquery 事件冒泡
-      </a>
-    </h2>
-    
-    <time>
-      3月 31, 2017
-    </time>
-		
-    
-    <div class='cats'>
-        <a href="/categories/笔记/">笔记</a>
-    </div>
-
-  </section>
-  <section class="article typo">
-	  <p>首先可以来看一个例子：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"dOne"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是最外层')"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"dTwo"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是中间层')"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.baidu.com"</span> <span class="attr">id</span>=<span class="string">"aTree"</span> <span class="attr">onclick</span>=<span class="string">"alert('我是最里层')"</span>&gt;</span>click me<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/4hjh4957/7/">点击运行</a></p>
-<p>上面这个示例分3层：<code>dOne</code> 最外面一层，<code>dTwo</code>中间层，<code>a</code>标签在最里层，他们各自有自己的<code>onclick</code>事件。</p>
-<p>运行后会发现一次弹出<code>我是最里层--&gt;我是中间层--&gt;我是最外层</code>然后跳转到百度。</p>
-<p>那么为什么会这样呢？</p>
-
-    
-	  <div class="readmore">
-      <a href="/2017/03/31/jquery 事件冒泡/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/javascript/">javascript</a>
-      
-        <a href="/tags/html/">html</a>
-      
-	  </div>
-    
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2017/03/31/Html5 Canvas/">
-        HTML 5 Canvas
-      </a>
-    </h2>
-    
-    <time>
-      3月 31, 2017
-    </time>
-		
-    
-    <div class='cats'>
-        <a href="/categories/笔记/">笔记</a>
-    </div>
-
-  </section>
-  <section class="article typo">
-	  <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">style</span>=<span class="string">"border:1px solid #000000;"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/fzyttzso/4/">点击运行</a></p>
-<blockquote>
-<p><code>&lt;canvas&gt;&lt;/canvas&gt;</code>创建一个画布</p>
-</blockquote>
-<p><strong><canvas></strong>本身没有绘图功能，需要搭配JavaScript来绘图</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);<span class="comment">//首先，找到&lt;canvas&gt;元素</span></div><div class="line"><span class="keyword">var</span> ctx = c.getContext(<span class="string">"2d"</span>);<span class="comment">//创建context对象</span></div><div class="line">ctx.fillStyle = <span class="string">"#FF0000"</span>;<span class="comment">//颜色</span></div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">150</span>, <span class="number">75</span>); <span class="comment">//大小 fillRect(x,y,width,height)</span></div></pre></td></tr></table></figure>
-<p><a href="https://jsfiddle.net/noakcn/fzyttzso/2/">点击运行</a></p>
-
-    
-	  <div class="readmore">
-      <a href="/2017/03/31/Html5 Canvas/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/html5/">html5</a>
-      
-        <a href="/tags/canvas/">canvas</a>
-      
-        <a href="/tags/h5/">h5</a>
       
 	  </div>
     

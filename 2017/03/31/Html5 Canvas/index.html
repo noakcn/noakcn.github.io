@@ -12,35 +12,35 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="NOAK">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HTML 5 Canvas1&amp;lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot; style=&quot;border:1px solid #000000;&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+  <meta name="description" content="1&amp;lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot; style=&quot;border:1px solid #000000;&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
 点击运行
 
 &amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;创建一个画布
 
 本身没有绘图功能，需要搭配JavaScript来绘图
-1234var c = d">
+1234var c = document.getEl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML 5 Canvas">
 <meta property="og:url" content="http://noak.tech/2017/03/31/Html5 Canvas/index.html">
 <meta property="og:site_name" content="NOAK">
-<meta property="og:description" content="HTML 5 Canvas1&amp;lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot; style=&quot;border:1px solid #000000;&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+<meta property="og:description" content="1&amp;lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot; style=&quot;border:1px solid #000000;&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
 点击运行
 
 &amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;创建一个画布
 
 本身没有绘图功能，需要搭配JavaScript来绘图
-1234var c = d">
+1234var c = document.getEl">
 <meta property="og:image" content="http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png">
-<meta property="og:updated_time" content="2017-03-31T02:47:35.594Z">
+<meta property="og:updated_time" content="2017-03-31T02:57:47.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 5 Canvas">
-<meta name="twitter:description" content="HTML 5 Canvas1&amp;lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot; style=&quot;border:1px solid #000000;&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+<meta name="twitter:description" content="1&amp;lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot; style=&quot;border:1px solid #000000;&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
 点击运行
 
 &amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;创建一个画布
 
 本身没有绘图功能，需要搭配JavaScript来绘图
-1234var c = d">
+1234var c = document.getEl">
 <meta name="twitter:image" content="http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
@@ -151,11 +151,11 @@
 
 	</section>
 	
-		<section class="tog"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-5-Canvas"><span class="toc-number">1.</span> <span class="toc-text">HTML 5 Canvas</span></a></li></ol></section>
+		<section class="tog"></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<h1 id="HTML-5-Canvas"><a href="#HTML-5-Canvas" class="headerlink" title="HTML 5 Canvas"></a>HTML 5 Canvas</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">style</span>=<span class="string">"border:1px solid #000000;"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
+    	<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">style</span>=<span class="string">"border:1px solid #000000;"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><a href="https://jsfiddle.net/noakcn/fzyttzso/4/" target="_blank" rel="external">点击运行</a></p>
 <blockquote>
 <p><code>&lt;canvas&gt;&lt;/canvas&gt;</code>创建一个画布</p>
@@ -163,12 +163,12 @@
 <p><strong><canvas></canvas></strong>本身没有绘图功能，需要搭配JavaScript来绘图</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);<span class="comment">//首先，找到&lt;canvas&gt;元素</span></div><div class="line"><span class="keyword">var</span> ctx = c.getContext(<span class="string">"2d"</span>);<span class="comment">//创建context对象</span></div><div class="line">ctx.fillStyle = <span class="string">"#FF0000"</span>;<span class="comment">//颜色</span></div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">150</span>, <span class="number">75</span>); <span class="comment">//大小 fillRect(x,y,width,height)</span></div></pre></td></tr></table></figure>
 <p><a href="https://jsfiddle.net/noakcn/fzyttzso/2/" target="_blank" rel="external">点击运行</a></p>
+<a id="more"></a>
 <p><strong>Canvas坐标</strong></p>
 <p><img src="http://om8bq99t5.bkt.clouddn.com/17-3-28/94347096-file_1490683818919_afa9.png" alt=""></p>
 <blockquote>
 <p>canvas 的左上角坐标为 (0,0) </p>
 </blockquote>
-<a id="more"></a>
 <p><strong>Canvas - 路径</strong></p>
 <p>绘制一条斜线</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</div><div class="line"><span class="keyword">var</span> ctx = c.getContext(<span class="string">"2d"</span>);</div><div class="line">ctx.moveTo(<span class="number">0</span>,<span class="number">0</span>); <span class="comment">//moveTo(x,y) 定义线条开始坐标</span></div><div class="line">ctx.lineTo(<span class="number">200</span>,<span class="number">100</span>);<span class="comment">//lineTo(x,y) 定义线条结束坐标</span></div><div class="line">ctx.stroke();<span class="comment">//实际地绘制出通过 moveTo() 和 lineTo() 方法定义的路径。</span></div></pre></td></tr></table></figure>
@@ -253,7 +253,7 @@
     
     <ul class="entry">
     
-        <li><a class="flat-box" href="/categories/笔记/"><div class='name'>笔记</div><div class='badget'>1</div></a></li>
+        <li><a class="flat-box" href="/categories/笔记/"><div class='name'>笔记</div><div class='badget'>3</div></a></li>
     
     </ul>
     
@@ -264,7 +264,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="/tags/canvas/" style="font-size: 14px; color: #808080">canvas</a> <a href="/tags/h5/" style="font-size: 14px; color: #808080">h5</a> <a href="/tags/html5/" style="font-size: 14px; color: #808080">html5</a>
+        <a href="/tags/canvas/" style="font-size: 14px; color: #808080">canvas</a> <a href="/tags/h5/" style="font-size: 14px; color: #808080">h5</a> <a href="/tags/html/" style="font-size: 14px; color: #808080">html</a> <a href="/tags/html5/" style="font-size: 14px; color: #808080">html5</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/redis/" style="font-size: 14px; color: #808080">redis</a> <a href="/tags/缓存/" style="font-size: 14px; color: #808080">缓存</a>
     </div>
 </div>
 
